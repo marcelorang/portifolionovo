@@ -131,7 +131,7 @@
           <v-row align="center" align-content="space-between">
             <v-col cols="12" lg="6" sm="6">
               <h1>Olho no Lance</h1>
-              <v-img src="src/assets/images/telaPhone12.jpg"></v-img>
+              <v-img id="AQUI" src="src/assets/images/telaPhone12.jpg"></v-img>
               <v-carousel hide-delimiters :show-arrows="false" cycle>
                 <v-carousel-item
                   v-for="(item, i) in items"
