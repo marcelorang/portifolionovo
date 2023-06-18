@@ -135,13 +135,14 @@
                 <v-carousel-item
                   v-for="(item, i) in items"
                   :key="i"
-                  :src="item.src"
+                  src="src/assets/images/telaPhone12.jpg"
                   reverse-transition="fade-transition"
                   transition="fade-transition"
                   max-height="700"
                   contain
                   class="darken-4"
                 >
+                  <!-- :src="item.src" -->
                 </v-carousel-item>
               </v-carousel>
               <br />
@@ -158,13 +159,14 @@
                 <v-carousel-item
                   v-for="(item, i) in med"
                   :key="i"
-                  :src="item.src"
+                  src="src/assets/images/telaPhone12.jpg"
                   reverse-transition="fade-transition"
                   transition="fade-transition"
                   max-height="700"
                   contain
                   class="darken-4"
                 >
+                  <!-- :src="item.src" -->
                 </v-carousel-item>
               </v-carousel>
               <br />
