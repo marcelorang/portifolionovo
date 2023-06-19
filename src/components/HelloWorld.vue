@@ -14,7 +14,7 @@
                 <br />
                 <h3>Vue || Vuetify || Ionic || JavaScript || .NET || C#</h3>
                 <br />
-                <p style="color:black">+55 81 99585-0815</p>
+
                 <p style="color: black">mclowebdev@gmail.com</p>
                 <br />
                 <v-row>
@@ -104,9 +104,11 @@
               </v-row>
             </div>
           </v-col>
-
+          <v-col>
+          </v-col>
 
           <v-col cols="12" lg="6" sm="6">
+
 
             <v-sheet class="text-right mr-4">
               Tecnologias: Vue, Ionic, Android Stúdio .NET C# <br />
@@ -140,7 +142,7 @@
             parando de trabalhar como músico profissional por mais de quinze
             anos.<br />
             Em meio a crise da Pandemia, vi que precisava migrar de Carreira e
-            foi onde me encontrei no mundo da programação. <br />
+            foi onde me encontrei na área de TI. <br />
             Comprometido em adquirir conhecimentos e enfrentar desafios no
             desenvolvimento de softwares.<br />
             Buscando oportunidades para aplicar sua paixão pela tecnologia e
