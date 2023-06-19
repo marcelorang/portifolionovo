@@ -12,10 +12,12 @@
           <v-col cols="12" sm="6" lg="3">
             <v-card variant="tonal">
               <br />
-              <img class="profilePic" alt="profile" src="@/assets/profile.png" />
+              <img class="profilePic" alt="profile" src="@/assets/perfil.jpg" />
               <div class="infos">
                 <h1>Marcelo Rangel</h1>
                 <h3>Desenvolvedor Fullstack Jr</h3>
+                <p>+55 81 99686-0815</p>
+                <p>mclowebdev@gmail.com</p>
                 <br />
                 <h3>Vue || Vuetify || Ionic || JavaScript || .NET || C#</h3>
                 <br />
@@ -95,13 +97,26 @@
         <v-divider />
         <h1 id="scrollToPortifolio">Portfólio</h1>
 
+
+
         <div>
+
+          <div>
+            <v-row>
+              <v-col>
+                <h1>Olho no Lance</h1>
+              </v-col>
+              <v-col>
+                <h1>MedZip</h1>
+              </v-col>
+            </v-row>
+          </div>
+
           <v-row align="center" align-content="space-between">
             <v-col cols="12" lg="6" sm="6">
-              <h1>Olho no Lance</h1>
               <v-carousel hide-delimiters :show-arrows="false" cycle>
-                <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" reverse-transition="fade-transition"
-                  transition="fade-transition" max-height="700" contain class="darken-4">
+                <v-carousel-item v-for="image2 in images2" :key="image2" reverse-transition="fade-transition"
+                  transition="fade-transition" contain class="darken-4" :src="image2">
                 </v-carousel-item>
               </v-carousel>
               <br />
@@ -113,20 +128,11 @@
             </v-col>
 
             <v-col cols="12" lg="6" sm="6">
-              <h1>MedZip</h1>
 
-
-              <!-- <v-carousel hide-delimiters :show-arrows="false" cycle max-height="700px">
-                <v-carousel-item src="src/assets/images/medzip1.png"></v-carousel-item>
-
-                <v-carousel-item src="src/assets/images/medzip2.png"></v-carousel-item>
-
-                <v-carousel-item src="src/assets/images/medzip3.png"></v-carousel-item>
-              </v-carousel> -->
-              <v-carousel hide-delimiters :show-arrows="true" cycle>
+              <v-carousel hide-delimiters :show-arrows="false" cycle>
                 <v-carousel-item v-for="image in images" :key="image" reverse-transition="fade-transition"
-                  transition="fade-transition" contain class="darken-4">
-                  <img :src="image">
+                  transition="fade-transition" contain class="darken-4" :src="image">
+
                 </v-carousel-item>
               </v-carousel>
               <br />
@@ -141,6 +147,8 @@
             </v-col>
           </v-row>
         </div>
+
+
       </v-responsive>
     </v-container>
   </v-sheet>
@@ -152,10 +160,18 @@ import img2 from '../assets/images/medzip2.png'
 import img3 from '../assets/images/medzip3.png'
 import img4 from '../assets/images/medzip4.png'
 import img5 from '../assets/images/medzip5.png'
+import img6 from '../assets/images/telaPhone12.jpg'
+import img7 from '../assets/images/telaPhone13.jpg'
+import img8 from '../assets/images/telaPhone14.jpg'
+import img9 from '../assets/images/telaPhone15.jpg'
+import img10 from '../assets/images/telaPhone16.jpg'
+
+
 export default {
   data() {
     return {
       images: [img1, img2, img3, img4, img5],
+      images2: [img6, img7, img8, img9, img10],
       tab: null,
       // items: [
       //   {
