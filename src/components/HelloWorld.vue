@@ -125,25 +125,23 @@
         </svg>
 
         <v-divider />
-        <h1 id="scrollToPortifolio">Portifólio</h1>
+        <h1 id="scrollToPortifolio">Portfólio</h1>
 
         <div>
           <v-row align="center" align-content="space-between">
             <v-col cols="12" lg="6" sm="6">
               <h1>Olho no Lance</h1>
-              <v-img id="AQUI" src="src/assets/images/telaPhone12.jpg"></v-img>
               <v-carousel hide-delimiters :show-arrows="false" cycle>
                 <v-carousel-item
                   v-for="(item, i) in items"
                   :key="i"
-                  src="src/assets/images/telaPhone12.jpg"
+                  :src="item.src"
                   reverse-transition="fade-transition"
                   transition="fade-transition"
                   max-height="700"
                   contain
                   class="darken-4"
                 >
-                  <!-- :src="item.src" -->
                 </v-carousel-item>
               </v-carousel>
               <br />
@@ -156,20 +154,37 @@
 
             <v-col cols="12" lg="6" sm="6">
               <h1>MedZip</h1>
-              <v-carousel hide-delimiters :show-arrows="false" cycle>
+              <v-carousel
+                hide-delimiters
+                :show-arrows="false"
+                cycle
+                max-height="700px"
+              >
+                <v-carousel-item
+                  src="src/assets/images/medzip1.png"
+                ></v-carousel-item>
+
+                <v-carousel-item
+                  src="src/assets/images/medzip2.png"
+                ></v-carousel-item>
+
+                <v-carousel-item
+                  src="src/assets/images/medzip3.png"
+                ></v-carousel-item>
+              </v-carousel>
+              <!-- <v-carousel hide-delimiters :show-arrows="false" cycle>
                 <v-carousel-item
                   v-for="(item, i) in med"
                   :key="i"
-                  src="src/assets/images/telaPhone12.jpg"
+                  :src="item.src"
                   reverse-transition="fade-transition"
                   transition="fade-transition"
                   max-height="700"
                   contain
                   class="darken-4"
                 >
-                  <!-- :src="item.src" -->
                 </v-carousel-item>
-              </v-carousel>
+              </v-carousel> -->
               <br />
               <v-sheet>
                 Tecnologias: Vue, Vuetify, C#, .NET. <br />
@@ -177,7 +192,7 @@
                 pronto sistema de agendamento de Consultas, <br />Cadastros de
                 Paciêntes, Colaboradores e médicos. <br />
                 Colaboração FrontEnd.<br />
-                <p><a href="www.medzip.com.br">www.medzip.com.br</a></p>
+                <p><a href="https://www.medzip.com.br">www.medzip.com.br</a></p>
               </v-sheet>
             </v-col>
           </v-row>
@@ -194,7 +209,7 @@ export default {
       tab: null,
       items: [
         {
-          src: "src/assets/images/telaPhone12.jpg",
+          src: "/src/assets/images/telaPhone12.jpg",
         },
         {
           src: "src/assets/images/telaPhone13.jpg",
@@ -209,23 +224,23 @@ export default {
           src: "src/assets/images/telaPhone16.jpg",
         },
       ],
-      med: [
-        {
-          src: "src/assets/images/medzip1.png",
-        },
-        {
-          src: "src/assets/images/medzip2.png",
-        },
-        {
-          src: "src/assets/images/medzip3.png",
-        },
-        {
-          src: "src/assets/images/medzip4.png",
-        },
-        {
-          src: "src/assets/images/medzip5.png",
-        },
-      ],
+      // med: [
+      //   {
+      //     src: "src/assets/images/medzip1.png",
+      //   },
+      //   {
+      //     src: "src/assets/images/medzip2.png",
+      //   },
+      //   {
+      //     src: "src/assets/images/medzip3.png",
+      //   },
+      //   {
+      //     src: "src/assets/images/medzip4.png",
+      //   },
+      //   {
+      //     src: "src/assets/images/medzip5.png",
+      //   },
+      // ],
     };
   },
   methods: {
