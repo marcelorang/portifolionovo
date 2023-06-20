@@ -101,7 +101,7 @@
                           <polygon style="fill:#D1D3D3;" points="219.821,50.525 270.346,50.525 219.821,0 	" />
                         </g>
                       </svg>
-                      <p>Curriculo</p>
+                      <p>Currículo</p>
                     </a>
                   </v-col>
 
