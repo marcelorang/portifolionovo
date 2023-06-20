@@ -4,7 +4,7 @@
       <v-responsive class="align-center text-center fill-height">
         <br />
         <v-row>
-          <v-col cols="12" sm="6" lg="2">
+          <v-col cols="12" sm="6" lg="2" md="12">
             <v-card variant="tonal">
               <br />
               <img class="profilePic" alt="profile" src="@/assets/perfil.jpg" />
@@ -120,7 +120,7 @@
 
 
 
-          <v-col cols="12" lg="9" sm="6">
+          <v-col cols="12" lg="9" sm="6" md="12">
             <div>
               <h1 id="scrollToPortifolio">Portfólio</h1>
               <v-divider></v-divider>
@@ -136,7 +136,7 @@
               </div> -->
 
               <v-row align="center" align-content="space-between">
-                <v-col cols="12" lg="6" sm="6">
+                <v-col cols="12" lg="6" sm="6" md="12">
                   <h1>Olho no Lance</h1>
                   <v-carousel hide-delimiters :show-arrows="false" cycle>
                     <v-carousel-item v-for="image2 in images2" :key="image2" reverse-transition="fade-transition"
@@ -144,7 +144,7 @@
                     </v-carousel-item>
                   </v-carousel>
                   <br />
-                  <v-col cols="12" lg="6" sm="6">
+                  <v-col cols="12" lg="6" sm="6" md="12">
 
                     <v-sheet class="text-left">
                       <h3>
@@ -158,7 +158,7 @@
 
                 </v-col>
 
-                <v-col cols="12" lg="6" sm="6">
+                <v-col cols="12" lg="6" sm="6" md="12">
                   <br />
                   <h1>MedZip</h1>
                   <v-carousel hide-delimiters :show-arrows="false" cycle>
