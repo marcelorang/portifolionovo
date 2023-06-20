@@ -228,9 +228,7 @@ import img7 from '../assets/images/telaPhone13.jpg'
 import img8 from '../assets/images/telaPhone14.jpg'
 import img9 from '../assets/images/telaPhone15.jpg'
 import img10 from '../assets/images/telaPhone16.jpg'
-import pdfMake from "pdfmake/build/pdfmake";
-import pdfFonts from "pdfmake/build/vfs_fonts";
-pdfMake.vfs = pdfFonts.pdfMake.vfs;
+
 import curriculo from "../assets/CurriculoDev.pdf"
 
 export default {
